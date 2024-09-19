@@ -1,0 +1,19 @@
+1. Home Page
+Design Style: Clean and minimalist, with a crisp white background and green accents to complement the lawn imagery.
+Hero Section: Full-width image of a freshly cut lawn with the tagline, "Your Local Lawn Care Experts."
+Introduction: Short introduction paragraph about the company with a friendly yet professional tone, briefly listing the services.
+Call to Action Button: Prominent “Request a Quote” button, designed to stand out but still maintain a minimalist look.
+Trust Signals: A simple gallery of lawn images showing their work, placed just below the introduction.
+Social Media Links: Icons linking to Facebook and Instagram displayed at the footer of the page.
+
+2. Services Page
+Service Descriptions: Short, friendly, and professional summaries of services with clean icons or images accompanying each service.
+Mowing, Edging, Weeding, Gutter Cleaning.
+Pricing Information: Pricing by acreage, formatted in a clean, easy-to-read table.
+Service Areas: Listed as bullet points for clarity.
+
+3. Contact Us Page
+Contact Information: Phone and email prominently displayed.
+Contact Form: Cleanly styled form with Name, Email, Service Needed, Acreage, City, and Message fields.
+Business Hours: Placeholder for an updateable calendar.
+Social Media Links: Repeated at the footer with Facebook and Instagram icons.

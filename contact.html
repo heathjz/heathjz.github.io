@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Michigan Lawn Care LLC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script src="script.js" defer></script>
+
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo-link">
+                <img src="logo.png" alt="Michigan Lawn Care LLC Logo" class="logo">
+            </a>
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+            </div>
+            <nav class="nav-links">
+                <ul>
+					<li><a href="index.html">Home</a></li>
+                    <li><a href="under-development.html">About Us</a></li>
+                    <li><a href="under-development.html">Reviews</a></li>
+                    <li><a href="under-development.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="contact-info">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need to get in touch, please use the form below or contact us directly.</p>
+        <p>Phone: <a href="tel:+15178154868"> (517) 815-4868</a></p>
+        <p>Email: <a href="mailto:michiganlawncarellc@gmail.com">michiganlawncarellc@gmail.com</a></p>
+    </section>
+
+    <main>
+        <section class="form-container">
+            <h2>Request a Quote</h2>
+            <form action="https://formsubmit.co/michiganlawncarellc@gmail.com" method="post" class="contact-form">
+                <input type="hidden" name="_next" value="thankyou.html">
+				<div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="text" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Service Needed</label>
+                    <select id="service" name="service" required>
+                        <option value="mowing">Mowing</option>
+                        <option value="edging">Edging</option>
+                        <option value="weeding">Weeding</option>
+                        <option value="gutters">Cleaning Gutters</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="acreage">Acreage (if applicable)</label>
+                    <input type="number" id="acreage" name="acreage">
+                </div>
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com/michiganlawncarellc" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/michiganlawncarellc" target="_blank">Instagram</a>
+        </div>
+        <p>&copy; 2024 Michigan Lawn Care LLC</p>
+    </footer>
+
+</body>
+</html>

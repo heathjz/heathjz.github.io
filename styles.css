@@ -1,0 +1,273 @@
+/* General reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+/* Centered logo and heading */
+.logo-center {
+    text-align: center;
+    margin-bottom: 10px; /* Add space between logo and heading */
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+}
+
+header h1 {
+    margin-top: 0; /* Remove margin to avoid extra space */
+    font-size: 1.8rem;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    top: 10px; /* Distance from the top */
+    right: 20px; /* Distance from the right */
+    z-index: 5000;
+}
+
+.menu-bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+/* Navigation links */
+.nav-links {
+    list-style-type: none;
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    align-items: center;
+    background-color: #333; /* Gray background same as footer */
+    width: 200px; /* Slimmed down width */
+    position: absolute;
+    top: 60px;
+    right: 20px; /* Adjusted to fit within the viewport */
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+    border-radius: 5px; /* Optional: for rounded corners */
+    padding: 10px 0; /* Reduced padding */
+}
+
+.nav-links.active {
+    display: flex; /* Show when active */
+    transform: translateY(0);
+}
+
+.nav-links ul {
+    list-style: none; /* Forcing the removal of bullets */
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 5px 0; /* Reduced margin */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem; /* Adjusted font size */
+    padding: 10px 15px; /* Adjusted padding */
+}
+
+/* Media Query for small screens */
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .nav-links {
+        display: flex;
+    }
+}
+
+/* Welcome Section */
+.intro {
+    text-align: center;
+    padding: 20px;
+}
+
+.intro h2 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.intro p {
+    font-size: 1.2rem;
+}
+
+/* Service Area Hero Section */
+.service-area-hero {
+    position: relative;
+    background: url('service-area-background.png') no-repeat center center/cover;
+    height: 750px; /* Adjust height as needed */
+}
+
+.service-area-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay background */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px; /* Optional: for rounded corners */
+}
+
+.service-area-overlay h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.service-area-overlay p {
+    font-size: 1.2rem;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.trust-signals {
+    margin-top: 20px;
+}
+
+.trust-signals h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 300px; /* Adjust as needed */
+    height: auto;
+    border-radius: 5px; /* Optional: for rounded corners */
+}
+
+/* Contact Form */
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Contact Info Styles */
+.contact-info {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-info h2 {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.contact-info a {
+    color: #4CAF50; /* Green color for phone and email */
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .social-links a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+}
+
+footer p {
+    margin-top: 10px;
+}
